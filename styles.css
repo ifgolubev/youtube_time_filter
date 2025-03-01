@@ -1,0 +1,20 @@
+/* Анимация скрытия видео */
+ytd-rich-item-renderer[style*="display: none"],
+ytd-video-renderer[style*="display: none"],
+ytd-grid-video-renderer[style*="display: none"] {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Скрытие пустых секций */
+ytd-rich-section-renderer[style*="display: none"],
+ytd-shelf-renderer[style*="display: none"] {
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
